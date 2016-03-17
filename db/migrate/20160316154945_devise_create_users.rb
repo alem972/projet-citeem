@@ -3,7 +3,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
     create_table(:users) do |t|
 
       t.datetime :birthday         
-      t.string :nickname, null: false
+      t.string :nickname
       t.integer :height
 
       ## Database authenticatable
