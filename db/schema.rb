@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20160316154945) do
 
   create_table "users", force: :cascade do |t|
     t.datetime "birthday"
-    t.string   "nickname",                            null: false
+    t.string   "nickname"
     t.integer  "height"
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
