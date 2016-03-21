@@ -1,12 +1,21 @@
 
-<div id="dash">
-	<body>
-		<div class = "Connecter">
-			<p>toto</p>
-		</div>
-
-		<div class= "Actualiter">	
-			<p>toto</p>
-		</div>
-	</body>
+<div class = "connecter">
+	 <% @online_users.each do |user| %>
+	 	<% if user != current_user %>
+	 		<%= user.nickname %>
+	 		<%= user.birthday %> </br>
+	 	<% end %>
+	 <% end %>
 </div>
+<div class= "Actualiter">	
+
+	<% @users_rdm.each do |user| %>
+		<%= user.nickname %>
+		<p class= "date">Date de naissance <%= user.birthday %> </p>
+		<p class= "taille">Taille <%= user.height %> </p>
+		</br>
+	<% end %>
+
+
+</div>
+

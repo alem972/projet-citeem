@@ -16,9 +16,26 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
 .navbar
 {
 	border-radius: 0;
+}
+
+.field {
+	background: grey;
+	position: relative;
+	left: 40%;
+	width: 16%;
+	padding: 1% 15px;
+	opacity: 1;
+}
+.actions {
+	position: relative;
+	right: 2.3%;
+	padding-top: 2%;
+	padding-bottom: 1%; 
+
 }
 
  // h2 {
@@ -33,8 +50,17 @@ position: relative;
   }
 
 a {
-	text-align: center;
-	position: relative; 
+	text-align: right;
+	position: relative;
+	right: 2.3%; 
+}
+
+	p.titre{
+	text-align: left;
+	position: relative;
+	margin-left: 2%;
+	top: 35px; 
+	font-size: 24px;
 }
 
 body {
@@ -42,4 +68,8 @@ body {
 	padding-top: 0%;
 	background-image: url(https://www.meetic.fr/pages/france/wp-content/uploads/sites/26/2015/11/Rencontres-Picardie.jpg);
 }
- 	
+
+.container-fluid {
+	position: relative;
+	bottom: 2%;
+}
