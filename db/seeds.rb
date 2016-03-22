@@ -5,6 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+bald_hair = HairStyle.create(style: "chauve")
+short_hair = HairStyle.create(style: "courts")
+mid_long_hair = HairStyle.create(style: "mi-longs")
+long_hair = HairStyle.create(style: "longs")
+curly_hair = HairStyle.create(style: "frisés")
+
+
 brown_hair = HairColor.create(color: "bruns")
 black_hair = HairColor.create(color: "noirs")
 blonde_hair = HairColor.create(color: "blonds")
@@ -27,7 +34,9 @@ richard = User.create(
 	email: "richard@wcs.fr",
 	password: "12345678",
 	eye_id: brown_eyes.id,
-	hair_color_id: black_hair.id)
+	hair_color_id: black_hair.id,
+	hair_style_id: mid_long_hair.id)
+	
 
 melanie = User.create(
 	nickname: "Mélanie",
@@ -36,7 +45,8 @@ melanie = User.create(
 	email: "melanie@wcs.fr",
 	password: "12345678",
 	eye_id: brown_eyes.id,
-	hair_color_id: black_hair.id)
+	hair_color_id: black_hair.id,
+	hair_style_id: mid_long_hair.id)
 
 benjamin = User.create(
 	nickname: "Benjamin",
@@ -45,7 +55,8 @@ benjamin = User.create(
 	email: "benjamin@wcs.fr",
 	password: "12345678",
 	eye_id: green_eyes.id,
-	hair_color_id: brown_hair.id)
+	hair_color_id: brown_hair.id,
+	hair_style_id: mid_long_hair.id)
 
 valentin = User.create(
 	nickname: "Valentin",
@@ -54,7 +65,8 @@ valentin = User.create(
 	email: "valentin@wcs.fr",
 	password: "12345678",
 	eye_id: hazelnut_eyes.id,
-	hair_color_id: black_hair.id)
+	hair_color_id: black_hair.id,
+	hair_style_id: short_hair.id)
 
 suzy = User.create(
 	nickname: "Suzy",
@@ -63,4 +75,5 @@ suzy = User.create(
 	email: "suzy@wcs.fr",
 	password: "12345678",
 	eye_id: brown_eyes.id,
-	hair_color_id: brown_hair.id)
+	hair_color_id: brown_hair.id,
+	hair_style_id: long_hair.id)
