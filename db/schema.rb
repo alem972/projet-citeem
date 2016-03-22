@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160322141720) do
+ActiveRecord::Schema.define(version: 20160322152519) do
 
   create_table "eyes", force: :cascade do |t|
     t.string   "color"
@@ -21,6 +21,12 @@ ActiveRecord::Schema.define(version: 20160322141720) do
 
   create_table "hair_colors", force: :cascade do |t|
     t.string   "color"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "hair_styles", force: :cascade do |t|
+    t.string   "style"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -43,11 +49,13 @@ ActiveRecord::Schema.define(version: 20160322141720) do
     t.datetime "updated_at",                          null: false
     t.integer  "eye_id"
     t.integer  "hair_color_id"
+    t.integer  "hair_style_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
   add_index "users", ["eye_id"], name: "index_users_on_eye_id"
   add_index "users", ["hair_color_id"], name: "index_users_on_hair_color_id"
+  add_index "users", ["hair_style_id"], name: "index_users_on_hair_style_id"
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
 
 end

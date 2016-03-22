@@ -5,4 +5,5 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
   belongs_to :eye
   belongs_to :hair_color
+  belongs_to :hair_style
 end
