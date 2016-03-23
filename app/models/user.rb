@@ -7,4 +7,5 @@
   belongs_to :hair_color
   belongs_to :hair_style
   belongs_to :gender
+  belongs_to :silhouette
 end

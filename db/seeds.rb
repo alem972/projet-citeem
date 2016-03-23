@@ -5,6 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+thin = Silhouette.create(silhouette: "mince")
+average = Silhouette.create(silhouette: "normale")
+fit = Silhouette.create(silhouette: "sportive")
+chubby = Silhouette.create(silhouette: "un peu enveloppée")
+fat = Silhouette.create(silhouette: "forte")
+
 man = Gender.create(gender: "homme")
 woman = Gender.create(gender: "femme")
 
@@ -40,7 +46,8 @@ richard = User.create(
 	eye_id: brown_eyes.id,
 	hair_color_id: black_hair.id,
 	hair_style_id: mid_long_hair.id,
-	gender_id: man.id)
+	gender_id: man.id,
+	silhouette_id: thin.id)
 	
 
 melanie = User.create(
@@ -52,7 +59,8 @@ melanie = User.create(
 	eye_id: brown_eyes.id,
 	hair_color_id: black_hair.id,
 	hair_style_id: mid_long_hair.id,
-	gender_id: woman.id)
+	gender_id: woman.id,
+	silhouette_id: chubby.id)
 
 benjamin = User.create(
 	nickname: "Benjamin",
@@ -63,7 +71,8 @@ benjamin = User.create(
 	eye_id: green_eyes.id,
 	hair_color_id: brown_hair.id,
 	hair_style_id: mid_long_hair.id,
-	gender_id: man.id)
+	gender_id: man.id,
+	silhouette_id: thin.id)
 
 valentin = User.create(
 	nickname: "Valentin",
@@ -74,7 +83,8 @@ valentin = User.create(
 	eye_id: hazelnut_eyes.id,
 	hair_color_id: black_hair.id,
 	hair_style_id: short_hair.id,
-	gender_id: man.id)
+	gender_id: man.id,
+	silhouette_id: thin.id)
 
 suzy = User.create(
 	nickname: "Suzy",
@@ -85,4 +95,5 @@ suzy = User.create(
 	eye_id: brown_eyes.id,
 	hair_color_id: brown_hair.id,
 	hair_style_id: long_hair.id,
-	gender_id: woman.id)
+	gender_id: woman.id,
+	silhouette_id: average.id)
