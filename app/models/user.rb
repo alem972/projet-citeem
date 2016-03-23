@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
   belongs_to :eye
   belongs_to :hair_color
   belongs_to :hair_style
+  belongs_to :gender
 end

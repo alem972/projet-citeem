@@ -5,6 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+man = Gender.create(gender: "homme")
+woman = Gender.create(gender: "femme")
+
+
 bald_hair = HairStyle.create(style: "chauve")
 short_hair = HairStyle.create(style: "courts")
 mid_long_hair = HairStyle.create(style: "mi-longs")
@@ -35,7 +39,8 @@ richard = User.create(
 	password: "12345678",
 	eye_id: brown_eyes.id,
 	hair_color_id: black_hair.id,
-	hair_style_id: mid_long_hair.id)
+	hair_style_id: mid_long_hair.id,
+	gender_id: man.id)
 	
 
 melanie = User.create(
@@ -46,7 +51,8 @@ melanie = User.create(
 	password: "12345678",
 	eye_id: brown_eyes.id,
 	hair_color_id: black_hair.id,
-	hair_style_id: mid_long_hair.id)
+	hair_style_id: mid_long_hair.id,
+	gender_id: woman.id)
 
 benjamin = User.create(
 	nickname: "Benjamin",
@@ -56,7 +62,8 @@ benjamin = User.create(
 	password: "12345678",
 	eye_id: green_eyes.id,
 	hair_color_id: brown_hair.id,
-	hair_style_id: mid_long_hair.id)
+	hair_style_id: mid_long_hair.id,
+	gender_id: man.id)
 
 valentin = User.create(
 	nickname: "Valentin",
@@ -66,7 +73,8 @@ valentin = User.create(
 	password: "12345678",
 	eye_id: hazelnut_eyes.id,
 	hair_color_id: black_hair.id,
-	hair_style_id: short_hair.id)
+	hair_style_id: short_hair.id,
+	gender_id: man.id)
 
 suzy = User.create(
 	nickname: "Suzy",
@@ -76,4 +84,5 @@ suzy = User.create(
 	password: "12345678",
 	eye_id: brown_eyes.id,
 	hair_color_id: brown_hair.id,
-	hair_style_id: long_hair.id)
+	hair_style_id: long_hair.id,
+	gender_id: woman.id)
