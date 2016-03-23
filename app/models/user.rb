@@ -8,4 +8,5 @@
   belongs_to :hair_style
   belongs_to :gender
   belongs_to :silhouette
+  belongs_to :origins
 end

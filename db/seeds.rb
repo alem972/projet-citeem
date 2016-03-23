@@ -11,9 +11,16 @@ fit = Silhouette.create(silhouette: "sportive")
 chubby = Silhouette.create(silhouette: "un peu enveloppée")
 fat = Silhouette.create(silhouette: "forte")
 
+amerindian = Origins.create(origins: "amerindien")
+arab = Origins.create(origins: "arabe")
+asian = Origins.create(origins: "asiatique")
+caucasian = Origins.create(origins: "caucasien")
+hispanic = Origins.create(origins: "hispanique")
+mixed = Origins.create(origins: "metisse")
+african = Origins.create(origins: "africain")
+
 man = Gender.create(gender: "homme")
 woman = Gender.create(gender: "femme")
-
 
 bald_hair = HairStyle.create(style: "chauve")
 short_hair = HairStyle.create(style: "courts")
@@ -21,13 +28,11 @@ mid_long_hair = HairStyle.create(style: "mi-longs")
 long_hair = HairStyle.create(style: "longs")
 curly_hair = HairStyle.create(style: "frisés")
 
-
 brown_hair = HairColor.create(color: "bruns")
 black_hair = HairColor.create(color: "noirs")
 blonde_hair = HairColor.create(color: "blonds")
 red_hair = HairColor.create(color: "roux")
 colored_hair = HairColor.create(color: "colorés")
-
 
 blue_eyes = Eye.create(color: "bleus")
 brown_eyes = Eye.create(color: "marrons")
@@ -35,7 +40,6 @@ hazelnut_eyes = Eye.create(color: "noisettes")
 grey_eyes = Eye.create(color: "gris")
 black_eyes = Eye.create(color: "noirs")
 green_eyes = Eye.create(color: "verts")
-
 
 richard = User.create(
 	nickname: "Richard",
@@ -47,8 +51,8 @@ richard = User.create(
 	hair_color_id: black_hair.id,
 	hair_style_id: mid_long_hair.id,
 	gender_id: man.id,
-	silhouette_id: thin.id)
-	
+	silhouette_id: thin.id,
+	origins_id: asian.id)
 
 melanie = User.create(
 	nickname: "Mélanie",
@@ -60,7 +64,8 @@ melanie = User.create(
 	hair_color_id: black_hair.id,
 	hair_style_id: mid_long_hair.id,
 	gender_id: woman.id,
-	silhouette_id: chubby.id)
+	silhouette_id: chubby.id,
+	origins_id: african.id)
 
 benjamin = User.create(
 	nickname: "Benjamin",
@@ -72,7 +77,8 @@ benjamin = User.create(
 	hair_color_id: brown_hair.id,
 	hair_style_id: mid_long_hair.id,
 	gender_id: man.id,
-	silhouette_id: thin.id)
+	silhouette_id: thin.id,
+	origins_id: caucasian.id)
 
 valentin = User.create(
 	nickname: "Valentin",
@@ -84,7 +90,8 @@ valentin = User.create(
 	hair_color_id: black_hair.id,
 	hair_style_id: short_hair.id,
 	gender_id: man.id,
-	silhouette_id: thin.id)
+	silhouette_id: thin.id,
+	origins_id: caucasian.id)
 
 suzy = User.create(
 	nickname: "Suzy",
@@ -96,4 +103,5 @@ suzy = User.create(
 	hair_color_id: brown_hair.id,
 	hair_style_id: long_hair.id,
 	gender_id: woman.id,
-	silhouette_id: average.id)
+	silhouette_id: average.id,
+	origins_id: caucasian.id)

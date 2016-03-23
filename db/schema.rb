@@ -13,6 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20160323103416) do
 
+  create_table "ethnic_origins", force: :cascade do |t|
+    t.string   "origins"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "eyes", force: :cascade do |t|
     t.string   "color"
     t.datetime "created_at", null: false
@@ -64,9 +70,11 @@ ActiveRecord::Schema.define(version: 20160323103416) do
     t.integer  "hair_style_id"
     t.integer  "gender_id"
     t.integer  "silhouette_id"
+    t.integer  "ethnic_origins_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["ethnic_origins_id"], name: "index_users_on_ethnic_origins_id"
   add_index "users", ["eye_id"], name: "index_users_on_eye_id"
   add_index "users", ["gender_id"], name: "index_users_on_gender_id"
   add_index "users", ["hair_color_id"], name: "index_users_on_hair_color_id"
