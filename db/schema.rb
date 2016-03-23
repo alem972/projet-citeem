@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(version: 20160323103416) do
     t.integer  "gender_id"
     t.integer  "silhouette_id"
     t.integer  "ethnic_origins_id"
+    t.datetime "last_ping_at"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

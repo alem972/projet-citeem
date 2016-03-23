@@ -1,21 +1,15 @@
-
 <div class = "connecter">
 	 <% @online_users.each do |user| %>
-	 	<% if user != current_user %>
-	 		<%= user.nickname %>
-	 		<%= user.birthday %> </br>
-	 	<% end %>
+	 	<%= user.nickname %>
+	 	<%= user.birthday %> </br>
 	 <% end %>
 </div>
-<div class= "Actualiter">	
 
+<div class= "Actualiter">	
 	<% @users_rdm.each do |user| %>
 		<%= user.nickname %>
 		<p class= "date">Date de naissance <%= user.birthday %> </p>
 		<p class= "taille">Taille <%= user.height %> </p>
 		</br>
 	<% end %>
-
-
 </div>
-
