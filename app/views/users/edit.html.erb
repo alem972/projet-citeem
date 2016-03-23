@@ -1,29 +1,56 @@
-<h1>Modification de mon profil</h1>
+<div id="edit">
 
-<%= form_for(@user) do |f| %>
-  <%= render 'shared/error_messages', :object => f.object %>
-  <div class="field">
-    <%= f.label :name, "Nom" %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email, "eMail" %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password, "Mot de passe" %><br />
-    <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation mot de passe", "Confirmation" %><br />
-    <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="actions">
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
+  <%= form_for(@user) do |f| %>
+  <div class="row">
+    <div id="section1" class="col-md-5">
+      <h1>Mon profil</h1>
+      
+      <div id="bloc1">
+        <div class="field1 form-group">
+          <%= f.label :nickname, "Surnom" %>
+          <%= f.text_field :nickname, class: 'form-control', placeholder: 'Surnom', :autofocus => true, required:  true %>
+        </div>
+        
+        <div class="field1 form-group">
+          <%= f.label :birthday, "Dâte de naissance" %>
+          <%= f.date_field :birthday, class: 'form-control', placeholder: 'Age', required:  true %>
+        </div>
+        
+        <div class="field1 form-group">
+          <%= f.label :email, "Email" %>
+          <%= f.email_field :email, class: 'form-control', placeholder: 'Email', required:  true %> 
+        </div>
+        
+        <div class="field1 form-group">
+          <%= f.label :password, "Mot de passe" %>
+          <%= f.password_field :password, class: 'form-control', placeholder: 'Mot de passe', required:  true %>
+        </div>
+        
+        <div class="field1">
+          <%= f.label :password_confirmation, "Confirmation mot de passe" %>
+          <%= f.text_field :password_confirmation, class: 'form-control', placeholder: 'Confirmation mot de passe', required:  true %>
+        </div>
+        
+        <div class="actions">
+          <%= f.submit "Mettre à jour mon profil", class: "btn btn-info" %>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-7">
+      <div id="section2">
+        <h1>Description</h1>
 
-<div>
-  <%= gravatar_for @user %>
-  <a href="http://gravatar.com/emails">changer</a>
+        <div class="field2 form-group">
+          <%= f.label :height, "Taille" %> 
+          <%= f.number_field :height, class: 'form-control', required:  true, in: 100..250, step: 1 %>
+        </div>
+      </div>
+
+      <div id="section3">
+      </div>
+    </div>
+  </div>
+
+  <% end %>
 </div>
