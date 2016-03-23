@@ -5,6 +5,15 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+amerindian = Origins.create(origins: "amerindien")
+arab = Origins.create(origins: "arabe")
+asian = Origins.create(origins: "asiatique")
+caucasian = Origins.create(origins: "caucasien")
+hispanic = Origins.create(origins: "hispanique")
+mixed = Origins.create(origins: "metisse")
+african = Origins.create(origins: "africain")
+
 man = Gender.create(gender: "homme")
 woman = Gender.create(gender: "femme")
 
@@ -40,7 +49,8 @@ richard = User.create(
 	eye_id: brown_eyes.id,
 	hair_color_id: black_hair.id,
 	hair_style_id: mid_long_hair.id,
-	gender_id: man.id)
+	gender_id: man.id,
+	origins_id: asian.id)
 	
 
 melanie = User.create(
@@ -52,7 +62,8 @@ melanie = User.create(
 	eye_id: brown_eyes.id,
 	hair_color_id: black_hair.id,
 	hair_style_id: mid_long_hair.id,
-	gender_id: woman.id)
+	gender_id: woman.id,
+	origins_id: african.id)
 
 benjamin = User.create(
 	nickname: "Benjamin",
@@ -63,7 +74,8 @@ benjamin = User.create(
 	eye_id: green_eyes.id,
 	hair_color_id: brown_hair.id,
 	hair_style_id: mid_long_hair.id,
-	gender_id: man.id)
+	gender_id: man.id,
+	origins_id: caucasian.id)
 
 valentin = User.create(
 	nickname: "Valentin",
@@ -74,7 +86,8 @@ valentin = User.create(
 	eye_id: hazelnut_eyes.id,
 	hair_color_id: black_hair.id,
 	hair_style_id: short_hair.id,
-	gender_id: man.id)
+	gender_id: man.id,
+	origins_id: caucasian.id)
 
 suzy = User.create(
 	nickname: "Suzy",
@@ -85,4 +98,5 @@ suzy = User.create(
 	eye_id: brown_eyes.id,
 	hair_color_id: brown_hair.id,
 	hair_style_id: long_hair.id,
-	gender_id: woman.id)
+	gender_id: woman.id,
+	origins_id: caucasian.id)
