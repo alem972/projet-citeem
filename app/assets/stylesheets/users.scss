@@ -1,3 +1,102 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+#discution
+{
+	background: rgba(0, 0, 0, 0.7);
+	margin: 5%;
+	padding: 10px;
+	color: black;
+	border-radius: 40px;
+
+	.gauche
+	{
+		width: 400px;
+		position: relative;
+		right: -4%;
+		padding: 5px;
+		margin: 20px;
+		background: #FFFFFF;
+		-webkit-border-radius: 80px;
+		-moz-border-radius: 80px;
+		border-radius: 20px;
+		border: #00A3FF solid 5px;
+
+		.surnom
+		{
+			margin:0 0 0 10px;
+			font-size: 18px;
+			color: #00A3FF;
+			text-align: left;
+		}
+
+		.contenu
+		{
+			font-size: 16px;
+			color: black;
+		}
+
+		.date_message
+		{
+			font-size: 10px;
+			margin: 20px 0px 0px 30px;
+			text-align: left;
+		}
+	
+	}
+
+	.droite
+	{
+		width: 400px;
+		position: relative;
+		left: 55%;
+		padding: 5px;
+		margin: 20px;
+		background: #FFFFFF;
+		-webkit-border-radius: 80px;
+		-moz-border-radius: 80px;
+		border-radius: 20px;
+		border: #FF95FF solid 5px;
+
+		.surnom
+		{
+			margin:0 0 0 10px;
+			font-size: 18px;
+			color: #00A3FF;
+			text-align: left;
+		}
+
+		.contenu
+		{
+			font-size: 16px;
+			color: black;
+		}
+
+		.date_message
+		{
+			font-size: 10px;
+			margin: 20px 0px 0px 30px;
+			text-align: left;
+			color: black;
+		}
+	
+	}
+	
+
+	input{
+	color: #00A3FF;
+	border-radius: 40px;
+	border: 2px solid #00A3FF;
+	background: white;
+	margin: 5px;
+	padding: 5px;
+	}
+	
+	h1{
+	color: white;
+	}
+}
+
