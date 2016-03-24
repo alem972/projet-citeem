@@ -11,13 +11,13 @@ fit = Silhouette.create(silhouette: "sportive")
 chubby = Silhouette.create(silhouette: "un peu enveloppée")
 fat = Silhouette.create(silhouette: "forte")
 
-amerindian = Origins.create(origins: "amerindien")
-arab = Origins.create(origins: "arabe")
-asian = Origins.create(origins: "asiatique")
-caucasian = Origins.create(origins: "caucasien")
-hispanic = Origins.create(origins: "hispanique")
-mixed = Origins.create(origins: "metisse")
-african = Origins.create(origins: "africain")
+amerindian = EthnicOrigin.create(origins: "amerindien")
+arab = EthnicOrigin.create(origins: "arabe")
+asian = EthnicOrigin.create(origins: "asiatique")
+caucasian = EthnicOrigin.create(origins: "caucasien")
+hispanic = EthnicOrigin.create(origins: "hispanique")
+mixed = EthnicOrigin.create(origins: "metisse")
+african = EthnicOrigin.create(origins: "africain")
 
 man = Gender.create(gender: "homme")
 woman = Gender.create(gender: "femme")
@@ -52,7 +52,7 @@ richard = User.create(
 	hair_style_id: mid_long_hair.id,
 	gender_id: man.id,
 	silhouette_id: thin.id,
-	origins_id: asian.id)
+	ethnic_origins_id: asian.id)
 
 melanie = User.create(
 	nickname: "Mélanie",
@@ -65,7 +65,7 @@ melanie = User.create(
 	hair_style_id: mid_long_hair.id,
 	gender_id: woman.id,
 	silhouette_id: chubby.id,
-	origins_id: african.id)
+	ethnic_origins_id: african.id)
 
 benjamin = User.create(
 	nickname: "Benjamin",
@@ -78,7 +78,7 @@ benjamin = User.create(
 	hair_style_id: mid_long_hair.id,
 	gender_id: man.id,
 	silhouette_id: thin.id,
-	origins_id: caucasian.id)
+	ethnic_origins_id: caucasian.id)
 
 valentin = User.create(
 	nickname: "Valentin",
@@ -91,7 +91,7 @@ valentin = User.create(
 	hair_style_id: short_hair.id,
 	gender_id: man.id,
 	silhouette_id: thin.id,
-	origins_id: caucasian.id)
+	ethnic_origins_id: caucasian.id)
 
 suzy = User.create(
 	nickname: "Suzy",
@@ -104,4 +104,4 @@ suzy = User.create(
 	hair_style_id: long_hair.id,
 	gender_id: woman.id,
 	silhouette_id: average.id,
-	origins_id: caucasian.id)
+	ethnic_origins_id: caucasian.id)
