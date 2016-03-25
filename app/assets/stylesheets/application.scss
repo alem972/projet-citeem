@@ -19,6 +19,7 @@
 .navbar
 {
 	border-radius: 0;
+	margin: 0;
 }
 
  // h2 {
@@ -40,6 +41,9 @@ a {
 body {
 	text-align: center;
 	padding-top: 0%;
-	background-image: url(https://www.meetic.fr/pages/france/wp-content/uploads/sites/26/2015/11/Rencontres-Picardie.jpg);
-}
- 	
+	background-image: url('/assets/trefle.jpg');
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: fixed;
+	}
