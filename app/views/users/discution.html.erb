@@ -21,7 +21,7 @@
 
 	<%= form_for @message do |f| %>
 		<%= f.label 'A ' %>
-		<%= f.collection_select :user_id, User.order(:nickname), :id, :nickname, {}, {:disabled => "disabled"} %>
+		<%= f.collection_select :user_id, User.order(:nickname), :id, :nickname %>
 		<br/>
 		<%= f.text_area :content %>
 		<br/><%= f.submit 'Envoyer' %>
