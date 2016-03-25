@@ -13,12 +13,18 @@
 			</div>
 			<div class="date_message">
 				<p>
-					Message envoyé le <%= User.find(message.author_id).updated_at.strftime('%d/%m/%y à %H:%M') %>
+					Message envoyé le <%= message.updated_at.strftime('%d/%m/%y à %H:%M') %>
 				</p>
 			</div>
 		</div>
 	<% end %>
 
-	
+	<%= form_for @message do |f| %>
+		<%= f.label 'A ' %>
+		<%= f.collection_select :user_id, User.order(:nickname), :id, :nickname, {}, {:disabled => "disabled"} %>
+		<br/>
+		<%= f.text_area :content %>
+		<br/><%= f.submit 'Envoyer' %>
+	<% end %>
 	
 </div>

@@ -6,7 +6,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'users#dashbord'
 
-  get 'discution/:id' => 'users#discution'
+  get 'discution/:id' => 'users#discution', as: :discution
+  resources :messages
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

@@ -12,6 +12,6 @@ benjamin = User.create(nickname: "Benjamin", birthday: DateTime.new(1989,01,24),
 valentin = User.create(nickname: "Valentin", birthday: DateTime.new(1995,03,24), height: 180, email: "valentin@wcs.fr", password: "12345678")
 suzy = User.create(nickname: "Suzy", birthday: DateTime.new(1981,03,11), height: 180, email: "suzy@wcs.fr", password: "12345678")
 
-message1 = Message.create(content: "Salut !", author_id: richard.id, user_id: melanie.id)
-message2 = Message.create(content: "Coucou", author_id: melanie.id, user_id: richard.id)
-message3 = Message.create(content: "Et de trois", author_id: richard.id, user_id: melanie.id)
+# message1 = Message.create(content: "Salut !", author_id: richard.id, user_id: melanie.id)
+# message2 = Message.create(content: "Coucou", author_id: melanie.id, user_id: richard.id)
+# message3 = Message.create(content: "Et de trois", author_id: richard.id, user_id: melanie.id)
