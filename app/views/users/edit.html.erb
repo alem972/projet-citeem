@@ -30,7 +30,7 @@
         
         <div class="field1">
           <%= f.label :password_confirmation, "Confirmation mot de passe" %>
-          <%= f.text_field :password_confirmation, class: 'form-control', placeholder: 'Confirmation mot de passe', required:  true %>
+          <%= f.password_field :password_confirmation, class: 'form-control', placeholder: 'Confirmation mot de passe', required:  true %>
         </div>
         
         <div class="actions">
@@ -80,9 +80,10 @@
           <%= f.radio_button :gender, "femme" %>
           <%= f.label 'Femme' %>
         </div>
+      <% end %>
 
         <div class="actions">
-          <%= f.submit "Mettre à jour mon profil", class: "btn btn-info" %>
+          <%= button_to "Ecrire un message à #{@user.nickname}", discution_path(@user.id), method: :get, class: "btn btn-warning" %>
         </div>
  
 
@@ -92,5 +93,4 @@
 
   </div>
 
-  <% end %>
 </div>
