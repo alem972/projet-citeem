@@ -9,4 +9,7 @@
   belongs_to :gender
   belongs_to :silhouette
   belongs_to :origins
+
+  scope :online, -> { where('last_ping_at > ?', 30.minutes.ago) }
+
 end

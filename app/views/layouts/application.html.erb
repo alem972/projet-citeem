@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title>Meetic</title>
+    <title>Citeem</title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
-
+  <style type="text/css">
+    .container-fluid {
+      padding-top: 0%;
+      position: relative;
+    }
+  </style>
   <body>
     <% if user_signed_in? %>
       <nav class="navbar navbar-default">
         <div class="container-fluid"> 
           <ul class="nav navbar-nav navbar-left">
-            <li><%= link_to "Mon dashboard", users_path, method: :get %></li>
+            <li><%= link_to "Mon dashboard", root_path, method: :get %></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
               <!--<form class="navbar-form navbar-left" role="search">
@@ -29,19 +35,14 @@
                 <li><%= link_to "Message reçu" %></li>
               </ul>
             </li>
-              <li><%= link_to current_user.nickname, edit_user_path(current_user.id), method: :get %></li>
-              <li><%= link_to "Déconnexion", destroy_user_session_path, method: :delete %></li>
-            
-             
+            <li><%= link_to current_user.nickname, edit_user_path(current_user.id), method: :get %></li>
+            <li><%= link_to "Déconnexion", destroy_user_session_path, method: :delete %></li>
           </ul>
         </div>
-    </nav>
-  <% end %>
+      </nav>
+    <% end %>
 
-
-      <%= yield %>
-
-
+    <%= yield %>
 
   </body>
 </html>

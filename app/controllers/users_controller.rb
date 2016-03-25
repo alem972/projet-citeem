@@ -21,6 +21,24 @@ class UsersController < ApplicationController
   def show
   end
 
+  def dashbord
+    @users = User.all
+    
+    tab = []
+    (0..@users.length-1).each do |num|
+      tab << num
+    end
+
+    @users_rdm = []
+    (1..5).each do |e|
+      rdm = Random.new.rand(0..tab.length-1)
+      @users_rdm << @users[tab[rdm]]
+      tab.delete_at(rdm)
+    end
+
+    @online_users = User.online
+  end
+
   private
 
   def user_param

@@ -4,10 +4,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'users#index'
+  root 'users#dashbord'
 
-  # get '/profil/:id' => 'users#edit'
-  # post '/profil/id' => 'users#update'
   resources :users
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

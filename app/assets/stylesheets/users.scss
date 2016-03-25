@@ -92,37 +92,81 @@
 //---Start Dashbord---//
 #dash
 {
+  .connecter{
+    text-align: right;
+    margin-left: 3%;
+    width: 25%;
+    height: 500px;
+    margin-left: 2%;
+    margin-top: 3%;
+    background-color: rgba(0, 0, 0, 0.6);
 
-  body 
-  {
-    background-image: url(http://i.telegraph.co.uk/multimedia/archive/02616/ruralEngland_2616380k.jpg);
+    .dashuser
+    {
+      postion: relative;  
+      left: 5%;
+      color: white;
+
+      p
+      {
+        margin: 0px 140px 20px;
+        color: white;
+      }
+
+      .date
+      {
+        color: white;
+      }
+
+      .taille
+      {
+        //postion: relative;
+        //padding-left: 5%;
+        color: white;
+      }
+    } 
   }
 
-  h2 
+  .actualiter
   {
-  position: relative;
-  left: 30%;
+    postion: relative;
+    text-align: left;
+    width: 64%;
+    height: 500px;
+    margin-left: 32%;
+    margin-top: -36.5%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .dashuser
+    {
+      postion: relative;  
+      left: 5%;
+      color: white;
+
+      p
+      {
+        margin: 0px 140px 20px;
+        color: white;
+      }
+
+      .date
+      {
+        color: white;
+      }
+
+      .taille
+      {
+        //postion: relative;
+        //padding-left: 5%;
+        color: white;
+      }
+    }
   }
 
-  .Connecter
-  {
-  text-align: left;
-  width: 25%;
-  height: 500px;
-  background: blue;
-  margin-left: 3%;
-  margin-top: 3%;
-  }
-
-  .Actualiter
-  {
-  text-align: left;
-  width: 50%;
-  height: 500px;
-  background: blue;
-  margin-left: 30%;
-  margin-top: -36.5%;
-  }
 }
 //---End Dashbord---//
+
+
+
+
 
