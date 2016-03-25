@@ -3,13 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //---Start Edit---//
-.row
-{
-  margin: 0;
-}
 
 #edit
 {
+  .row
+  {
+    margin: 0;
+  }
+
   #section1
   {
     margin: 0;
