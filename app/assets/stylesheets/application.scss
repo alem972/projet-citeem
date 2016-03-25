@@ -20,9 +20,11 @@
 .navbar
 {
 	border-radius: 0;
+	margin: 0;
 }
 
-.field {
+.field
+{
 	background: grey;
 	position: relative;
 	left: 40%;
@@ -30,12 +32,13 @@
 	padding: 1% 15px;
 	opacity: 1;
 }
-.actions {
+
+.actions
+{
 	position: relative;
 	right: 2.3%;
 	padding-top: 2%;
 	padding-bottom: 1%; 
-
 }
 
  // h2 {
@@ -44,36 +47,46 @@
  // 	left: 43%
  // }
 
-.container-fluid {
+.container-fluid
+{
   padding-top: 0%;
-position: relative;
-  }
+	position: relative;
+}
 
-a {
+a
+{
 	text-align: right;
 	position: relative;
 	right: 2.3%; 
 }
 
-	p.titre{
-		text-align: left;
-		position: relative;
-		margin-left: 2%;
-		top: 35px; 
-		font-size: 24px;
+p.titre
+{
+	text-align: left;
+	position: relative;
+	margin-left: 2%;
+	top: 35px; 
+	font-size: 24px;
 }
 
-body {
+body
+{
 	text-align: center;
 	padding-top: 0%;
-	background-image: url(https://www.meetic.fr/pages/france/wp-content/uploads/sites/26/2015/11/Rencontres-Picardie.jpg);
+	background-image: url('/assets/trefle.jpg');
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: fixed;
 }
 
-.container-fluid {
+.container-fluid
+{
 	position: relative;
 	bottom: 2%;
 }
-.navbar {
+
+.navbar
+{
 	border-radius: 0;
 }
-
