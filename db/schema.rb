@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160323103416) do
+ActiveRecord::Schema.define(version: 20160323142800) do
 
   create_table "ethnic_origins", force: :cascade do |t|
     t.string   "origins"
@@ -65,7 +65,6 @@ ActiveRecord::Schema.define(version: 20160323103416) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.datetime "last_ping_at"
     t.integer  "eye_id"
     t.integer  "hair_color_id"
     t.integer  "hair_style_id"
