@@ -9,7 +9,12 @@ class User < ActiveRecord::Base
   belongs_to :gender
   belongs_to :silhouette
   belongs_to :ethnic_origins
+  has_many :messages
 
   scope :online, -> { where('last_ping_at > ?', 30.minutes.ago) }
+
+  def get_age
+  	(DateTime.now.to_i - self.birthday.to_datetime.to_i) / (60*60*24*365)
+  end
 
 end

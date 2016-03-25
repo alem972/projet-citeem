@@ -47,11 +47,15 @@ GEM
       sass (>= 3.3.4)
     builder (3.2.2)
     byebug (8.2.2)
+<<<<<<< HEAD
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.8)
       climate_control (>= 0.0.3, < 1.0)
     coderay (1.1.1)
+=======
+    coderay (1.1.0)
+>>>>>>> origin/mg_messages
     coffee-rails (4.1.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.1.x)
@@ -94,6 +98,7 @@ GEM
     nokogiri (1.6.7.2)
       mini_portile2 (~> 2.0.0.rc2)
     orm_adapter (0.5.0)
+<<<<<<< HEAD
     paperclip (4.3.6)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -101,6 +106,9 @@ GEM
       mime-types
       mimemagic (= 0.3.0)
     pry (0.10.3)
+=======
+    pry (0.10.1)
+>>>>>>> origin/mg_messages
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -184,7 +192,10 @@ DEPENDENCIES
   devise
   jbuilder (~> 2.0)
   jquery-rails
+<<<<<<< HEAD
   paperclip
+=======
+>>>>>>> origin/mg_messages
   pry
   rails (= 4.2.6)
   sass-rails (~> 5.0)

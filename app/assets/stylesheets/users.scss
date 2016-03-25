@@ -3,14 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 //---Start Edit---//
-#edit
-{
-  
 .row
 {
   margin: 0;
 }
 
+#edit
+{
   #section1
   {
     margin: 0;
@@ -103,20 +102,20 @@
       text-align: center;
     }
 
-        .field2
-        {
-        position: relative;
-        width: 100%;
-        padding: 1% 35%;
+    .field2
+    {
+    position: relative;
+    width: 100%;
+    padding: 1% 35%;
 
-        }
+    }
 
-        .actions
-        {
-          margin-bottom: 5%;
-          padding-top: 5%;
-          padding-bottom: 4%;
-        }
+    .actions
+    {
+      margin-bottom: 5%;
+      padding-top: 5%;
+      padding-bottom: 4%;
+    }
 
   }
 
@@ -202,6 +201,127 @@
 //---End Dashbord---//
 
 
+#discution
+{
+	background: rgba(0, 0, 0, 0.7);
+	margin: 5%;
+	padding: 10px;
+	color: black;
+	border-radius: 40px;
+
+	.gauche
+	{
+		width: 400px;
+		position: relative;
+		right: -4%;
+		padding: 5px;
+		margin: 40px;
+
+		background: #FFFFFF;
+		-webkit-border-radius: 80px;
+		-moz-border-radius: 80px;
+		border-radius: 20px;
+		box-shadow: 0px 0px 15px 10px #5BC0DE;
+
+		.surnom
+		{
+			margin:0 0 0 10px;
+			font-size: 18px;
+			color: #00A3FF;
+			text-align: left;
+		}
+
+		.contenu
+		{
+			font-size: 16px;
+			color: black;
+		}
+
+		.date_message
+		{
+			font-size: 10px;
+			margin: 20px 0px 0px 30px;
+			text-align: left;
+		}
+	
+	}
+
+	.droite
+	{
+		width: 400px;
+		position: relative;
+		left: 50%;
+		padding: 5px;
+		margin: 40px;
+		background: #FFFFFF;
+		-webkit-border-radius: 80px;
+		-moz-border-radius: 80px;
+		border-radius: 20px;
+		//border: #FF95FF solid 5px;
+		box-shadow: 0px 0px 15px 10px #FF95FF;
+
+		.surnom
+		{
+			margin:0 0 0 20px;
+			font-size: 18px;
+			color: #00A3FF;
+			text-align: left;
+		}
+
+		.contenu
+		{
+			font-size: 16px;
+			color: black;
+		}
+
+		.date_message
+		{
+			font-size: 10px;
+			margin: 15px 0px 0px 30px;
+			text-align: left;
+			color: black;
+		}
+
+	}
+
+	h1
+	{
+  	color: white;
+  	font-family:URW Chancery L;
+  	font-size: 35px;
+	}
+
+	label 
+	{
+		color: #f5f5f5;
+	}
+
+	#message_user_id
+	{
+  	background: rgba(0, 0, 0, 0);
+  	color: white;
+  	border: 0px;
+	}
 
 
+	#message_content
+	{
+  	margin: 30px;
+  	width: 35%;
+  	height: 50px;
+  	box-shadow: 0px 0px 15px 10px #5BC0DE;
+  	border-radius: 20px;
+	}
 
+	input
+	{
+  	color: #00A3FF;
+  	border-radius: 40px;
+  	border: white 1px solid;
+  	background: white;
+  	margin: 10px;
+  	padding: 10px;
+  	box-shadow: 0px 0px 5px 5px #5BC0DE;
+  	font-size: 14px;
+	}
+}

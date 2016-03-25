@@ -1,0 +1,30 @@
+<div id="discution">
+
+	<h1>En discussion avec: <%= @user.nickname %></h1>
+
+	<% @messages.each do |message| %>
+		<div class="<%= message.user.id != @user.id ? 'gauche' : 'droite' %>">
+			<div class="surnom">
+				<%= User.find(message.author_id).nickname %> dit:
+			</div>
+			
+			<div class="contenu">
+				<%= message.content %>
+			</div>
+			<div class="date_message">
+				<p>
+					Message envoyé le <%= message.updated_at.strftime('%d/%m/%y à %H:%M') %>
+				</p>
+			</div>
+		</div>
+	<% end %>
+
+	<%= form_for @message do |f| %>
+		<%= f.label 'A ' %>
+		<%= f.collection_select :user_id, User.order(:nickname), :id, :nickname %>
+		<br/>
+		<%= f.text_area :content %>
+		<br/><%= f.submit 'Envoyer' %>
+	<% end %>
+	
+</div>

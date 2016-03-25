@@ -105,3 +105,7 @@ suzy = User.create(
 	gender_id: woman.id,
 	silhouette_id: average.id,
 	ethnic_origins_id: caucasian.id)
+
+# message1 = Message.create(content: "Salut !", author_id: richard.id, user_id: melanie.id)
+# message2 = Message.create(content: "Coucou", author_id: melanie.id, user_id: richard.id)
+# message3 = Message.create(content: "Et de trois", author_id: richard.id, user_id: melanie.id)

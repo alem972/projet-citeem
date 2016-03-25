@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   root 'users#dashbord'
 
   resources :users
+
+  get 'discution/:id' => 'users#discution', as: :discution
+  resources :messages
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
