@@ -2,10 +2,10 @@
 
   <%= form_for(@user) do |f| %>
   <div class="row">
-    <div id="section1" class="col-md-4 col-md-offset-1">
+    <div id="section1" class="col-md-4">
       <h1>Mon profil</h1>
 
-      <img src="/assets/bruce_lee.jpg" alt="chinois" />
+      <img src="/assets/marty_mcfly.jpg" alt="Marty McFly" />
       
       <div id="bloc1">
         <div class="field1 form-group">
@@ -39,58 +39,64 @@
       </div>
     </div>
     
-    <div class="col-md-5 col-md-offset-1">
+    <div class="col-md-7">
       <div id="section2">
         <h1>Description</h1> 
 
-        <div class="field2 form-group">
-          <%= f.label :height, "Taille" %> 
-          <%= f.number_field :height, class: 'form-control', required:  true, in: 100..250, step: 1 %>
-        </div>
-
-        <div class="field2 form-group">
-          <%= f.label 'Couleur des yeux' %>
-          <%= f.collection_select :eye_id, Eye.order(:color), :id, :color %>
-        </div>
-
-        <div class= "field2 form-group">
-          <%= f.label 'Couleur des cheveux'%>
-          <%= f.collection_select :hair_color_id, HairColor.order(:color), :id, :color %>
-        </div>
-
-
-        <div class= "field2 form-group">
-          <%= f.label 'Style de Coiffure' %>
-          <%= f.collection_select :hair_style_id, HairStyle.order(:style), :id, :style %>
-        </div>
-
-        <div class= "field2 form-group">
-          <%= f.label 'Silhouette'%>
-          <%= f.collection_select :silhouette_id, Silhouette.order(:silhouette), :id, :silhouette %>
-        </div>
-
-        <div class= "field2 form-group">
-          <%= f.label 'Origines Ethniques' %>
-          <%= f.collection_select :ethnic_origins_id, EthnicOrigin.order(:origins), :id, :origins %>
-        </div>
-
-        <div class= "field2 form-group">
+        <div class= "field2 form-group" id="hf">
           <%= f.radio_button :gender, "homme", checked: true %>
           <%= f.label 'Homme' %>
           <%= f.radio_button :gender, "femme" %>
           <%= f.label 'Femme' %>
+        </div>
+        
+        <div class="left">
+          <div class="field2 form-group">
+            <%= f.label :height, "Taille" %> 
+            <%= f.number_field :height, required:  true, in: 100..250, step: 1 %>
+          </div>
+
+          <div class="field2 form-group">
+            <%= f.label 'Couleur des yeux' %>
+            <%= f.collection_select :eye_id, Eye.order(:color), :id, :color %>
+          </div>
+
+          <div class= "field2 form-group">
+            <%= f.label 'Couleur des cheveux'%>
+            <%= f.collection_select :hair_color_id, HairColor.order(:color), :id, :color %>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class= "field2 form-group">
+            <%= f.label 'Style de Coiffure' %>
+            <%= f.collection_select :hair_style_id, HairStyle.order(:style), :id, :style %>
+          </div>
+
+          <div class= "field2 form-group">
+            <%= f.label 'Silhouette'%>
+            <%= f.collection_select :silhouette_id, Silhouette.order(:silhouette), :id, :silhouette %>
+          </div>
+
+          <div class= "field2 form-group">
+            <%= f.label 'Origines Ethniques' %>
+            <%= f.collection_select :ethnic_origins_id, EthnicOrigin.order(:origins), :id, :origins %>
+          </div>
         </div>
       <% end %>
 
         <div class="actions">
           <%= button_to "Ecrire un message à #{@user.nickname}", discution_path(@user.id), method: :get, class: "btn btn-warning" %>
         </div>
- 
-
-      <div id="section3">
       </div>
+
+        <div id="section3">
+          <h1>Centres d'intérêts</h1>
+            <div id="area">
+              <%= text_area(:post, :body, cols: 60, rows: 10) %>
+            </div>
+        </div>
+
     </div>
-
   </div>
-
 </div>
