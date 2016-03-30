@@ -14,9 +14,9 @@
 	<div class="actualiter">	
 		<div class="dashuser">
 			<% @users_rdm.each do |user| %>
+				<%= user.nickname %>
 				<p class="date">Date de naissance <%= user.birthday %> </p>
 				<p class="taille">Taille <%= user.height %> </p>
-				<%= user.nickname %>
 				</br>
 			<% end %>
 		</div>
